@@ -1,0 +1,2112 @@
+signal time=1622069977.198570 sender=org.freedesktop.DBus -> destination=:1.3541 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3541"
+signal time=1622069977.199387 sender=org.freedesktop.DBus -> destination=:1.3541 serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3541"
+signal time=1622069980.704768 sender=:1.37 -> destination=(null destination) serial=10353 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=RunningApplicationsChanged
+method call time=1622069980.708093 sender=:1.1424 -> destination=:1.37 serial=723 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=GetRunningApplications
+method return time=1622069980.801556 sender=:1.37 -> destination=:1.1424 serial=10354 reply_serial=723
+   array [
+      dict entry(
+         string "window:388"
+         array [
+            dict entry(
+               string "active-on-seats"
+               variant                   array [
+                     string "seat0"
+                  ]
+            )
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "flutter_flutter"
+            )
+         ]
+      )
+      dict entry(
+         string "code_code.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "code_code"
+            )
+         ]
+      )
+      dict entry(
+         string "firefox.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "org.gnome.Terminal.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "gnome-system-monitor.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "keepassxc_keepassxc.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "keepassxc_keepassxc"
+            )
+         ]
+      )
+      dict entry(
+         string "org.gnome.Nautilus.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "thunderbird.desktop"
+         array [
+         ]
+      )
+   ]
+signal time=1622069980.948802 sender=:1.3507 -> destination=(null destination) serial=16 path=/org/gtk/gio/DesktopAppInfo; interface=org.gtk.gio.DesktopAppInfo; member=Launched
+   array of bytes "/var/lib/snapd/desktop/applications/code_code.desktop" + \0
+   string ""
+   int64 111121
+   array [
+      string "file:///home/mea/flutter-linux-snap-url-launcher-bug/README.md"
+   ]
+   array [
+      dict entry(
+         string "origin-desktop-file"
+         variant             array of bytes "/var/lib/snapd/desktop/applications/code_code.desktop" + \0
+      )
+      dict entry(
+         string "origin-prgname"
+         variant             array of bytes "flutterlinuxsnapurllauncherbug" + \0
+      )
+      dict entry(
+         string "origin-pid"
+         variant             int64 110502
+      )
+   ]
+method call time=1622069981.011469 sender=:1.3542 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069981.011510 sender=org.freedesktop.DBus -> destination=:1.3542 serial=1 reply_serial=1
+   string ":1.3542"
+signal time=1622069981.011522 sender=org.freedesktop.DBus -> destination=(null destination) serial=4115 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3542"
+   string ""
+   string ":1.3542"
+signal time=1622069981.011537 sender=org.freedesktop.DBus -> destination=:1.3542 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3542"
+method call time=1622069981.012964 sender=:1.3542 -> destination=org.freedesktop.systemd1 serial=2 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=StartTransientUnit
+   string "snap.code.code.f8200ea3-3c4a-458b-8455-4ce222a206f9.scope"
+   string "fail"
+   array [
+      struct {
+         string "PIDs"
+         variant             array [
+               uint32 111121
+            ]
+      }
+   ]
+   array [
+   ]
+method call time=1622069981.013050 sender=:1.0 -> destination=org.freedesktop.DBus serial=15361 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=GetConnectionUnixUser
+   string ":1.3542"
+method return time=1622069981.013060 sender=org.freedesktop.DBus -> destination=:1.0 serial=5639 reply_serial=15361
+   uint32 1000
+method call time=1622069981.013763 sender=:1.0 -> destination=org.freedesktop.DBus serial=15362 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',sender='org.freedesktop.DBus',path='/org/freedesktop/DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0=':1.3542'"
+method return time=1622069981.013791 sender=org.freedesktop.DBus -> destination=:1.0 serial=5640 reply_serial=15362
+method call time=1622069981.013797 sender=:1.0 -> destination=org.freedesktop.DBus serial=15363 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=GetNameOwner
+   string ":1.3542"
+method return time=1622069981.013805 sender=org.freedesktop.DBus -> destination=:1.0 serial=5641 reply_serial=15363
+   string ":1.3542"
+signal time=1622069981.015442 sender=:1.0 -> destination=(null destination) serial=15364 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=JobNew
+   uint32 8785
+   object path "/org/freedesktop/systemd1/job/8785"
+   string "snap.code.code.f8200ea3-3c4a-458b-8455-4ce222a206f9.scope"
+method return time=1622069981.015492 sender=:1.0 -> destination=:1.3542 serial=15365 reply_serial=2
+   object path "/org/freedesktop/systemd1/job/8785"
+signal time=1622069981.024107 sender=:1.0 -> destination=(null destination) serial=15366 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=JobRemoved
+   uint32 8785
+   object path "/org/freedesktop/systemd1/job/8785"
+   string "snap.code.code.f8200ea3-3c4a-458b-8455-4ce222a206f9.scope"
+   string "done"
+method call time=1622069981.024149 sender=:1.0 -> destination=org.freedesktop.DBus serial=15367 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',sender='org.freedesktop.DBus',path='/org/freedesktop/DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0=':1.3542'"
+signal time=1622069981.026213 sender=org.freedesktop.DBus -> destination=:1.3542 serial=5 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3542"
+signal time=1622069981.026251 sender=org.freedesktop.DBus -> destination=(null destination) serial=4116 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3542"
+   string ":1.3542"
+   string ""
+method call time=1622069981.762697 sender=:1.3543 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069981.762733 sender=org.freedesktop.DBus -> destination=:1.3543 serial=1 reply_serial=1
+   string ":1.3543"
+signal time=1622069981.762746 sender=org.freedesktop.DBus -> destination=(null destination) serial=4117 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3543"
+   string ""
+   string ":1.3543"
+signal time=1622069981.762758 sender=org.freedesktop.DBus -> destination=:1.3543 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3543"
+method call time=1622069981.765221 sender=:1.3543 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069981.765262 sender=org.freedesktop.DBus -> destination=:1.3543 serial=3 reply_serial=2
+method call time=1622069981.765268 sender=:1.3543 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069981.765288 sender=org.freedesktop.DBus -> destination=:1.3543 serial=4 reply_serial=3
+method call time=1622069981.765293 sender=:1.3543 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069981.765299 sender=org.freedesktop.DBus -> destination=:1.3543 serial=5 reply_serial=4
+method call time=1622069981.765303 sender=:1.3543 -> destination=org.freedesktop.DBus serial=5 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/http/'"
+method return time=1622069981.765309 sender=org.freedesktop.DBus -> destination=:1.3543 serial=6 reply_serial=5
+method call time=1622069981.765312 sender=:1.3543 -> destination=org.freedesktop.DBus serial=6 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/https/'"
+method return time=1622069981.765318 sender=org.freedesktop.DBus -> destination=:1.3543 serial=7 reply_serial=6
+method call time=1622069981.765322 sender=:1.3543 -> destination=org.freedesktop.DBus serial=7 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/ftp/'"
+method return time=1622069981.765329 sender=org.freedesktop.DBus -> destination=:1.3543 serial=8 reply_serial=7
+method call time=1622069981.765334 sender=:1.3543 -> destination=org.freedesktop.DBus serial=8 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/socks/'"
+method return time=1622069981.765343 sender=org.freedesktop.DBus -> destination=:1.3543 serial=9 reply_serial=8
+method call time=1622069981.875399 sender=:1.3543 -> destination=org.freedesktop.DBus serial=9 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/socks/'"
+method return time=1622069981.875450 sender=org.freedesktop.DBus -> destination=:1.3543 serial=10 reply_serial=9
+method call time=1622069981.875458 sender=:1.3543 -> destination=org.freedesktop.DBus serial=10 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/ftp/'"
+method return time=1622069981.875468 sender=org.freedesktop.DBus -> destination=:1.3543 serial=11 reply_serial=10
+method call time=1622069981.875472 sender=:1.3543 -> destination=org.freedesktop.DBus serial=11 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/https/'"
+method return time=1622069981.875482 sender=org.freedesktop.DBus -> destination=:1.3543 serial=12 reply_serial=11
+method call time=1622069981.875488 sender=:1.3543 -> destination=org.freedesktop.DBus serial=12 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/http/'"
+method return time=1622069981.875498 sender=org.freedesktop.DBus -> destination=:1.3543 serial=13 reply_serial=12
+method call time=1622069981.875503 sender=:1.3543 -> destination=org.freedesktop.DBus serial=13 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069981.875524 sender=org.freedesktop.DBus -> destination=:1.3543 serial=14 reply_serial=13
+signal time=1622069981.888170 sender=:1.37 -> destination=(null destination) serial=10355 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=RunningApplicationsChanged
+method call time=1622069981.888648 sender=:1.1424 -> destination=:1.37 serial=724 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=GetRunningApplications
+method return time=1622069981.900590 sender=:1.37 -> destination=:1.1424 serial=10356 reply_serial=724
+   array [
+      dict entry(
+         string "code_code.desktop"
+         array [
+            dict entry(
+               string "active-on-seats"
+               variant                   array [
+                     string "seat0"
+                  ]
+            )
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "code_code"
+            )
+         ]
+      )
+      dict entry(
+         string "window:388"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "flutter_flutter"
+            )
+         ]
+      )
+      dict entry(
+         string "firefox.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "org.gnome.Terminal.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "gnome-system-monitor.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "keepassxc_keepassxc.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "keepassxc_keepassxc"
+            )
+         ]
+      )
+      dict entry(
+         string "org.gnome.Nautilus.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "thunderbird.desktop"
+         array [
+         ]
+      )
+   ]
+signal time=1622069981.903506 sender=org.freedesktop.DBus -> destination=:1.3543 serial=6 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3543"
+signal time=1622069981.903542 sender=org.freedesktop.DBus -> destination=(null destination) serial=4118 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3543"
+   string ":1.3543"
+   string ""
+method call time=1622069982.129311 sender=:1.3544 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069982.129354 sender=org.freedesktop.DBus -> destination=:1.3544 serial=1 reply_serial=1
+   string ":1.3544"
+signal time=1622069982.129367 sender=org.freedesktop.DBus -> destination=(null destination) serial=4119 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3544"
+   string ""
+   string ":1.3544"
+signal time=1622069982.129386 sender=org.freedesktop.DBus -> destination=:1.3544 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3544"
+method call time=1622069982.129739 sender=:1.3544 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.129763 sender=org.freedesktop.DBus -> destination=:1.3544 serial=3 reply_serial=2
+method call time=1622069982.130012 sender=:1.3544 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069982.130054 sender=org.freedesktop.DBus -> destination=:1.3544 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.3544"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069982.130953 sender=:1.3544 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.130969 sender=org.freedesktop.DBus -> destination=:1.3544 serial=5 reply_serial=4
+signal time=1622069982.132073 sender=org.freedesktop.DBus -> destination=:1.3544 serial=7 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3544"
+signal time=1622069982.132098 sender=org.freedesktop.DBus -> destination=(null destination) serial=4120 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3544"
+   string ":1.3544"
+   string ""
+method call time=1622069982.137638 sender=:1.3545 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069982.137674 sender=org.freedesktop.DBus -> destination=:1.3545 serial=1 reply_serial=1
+   string ":1.3545"
+signal time=1622069982.137686 sender=org.freedesktop.DBus -> destination=(null destination) serial=4121 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3545"
+   string ""
+   string ":1.3545"
+signal time=1622069982.137703 sender=org.freedesktop.DBus -> destination=:1.3545 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3545"
+method call time=1622069982.138004 sender=:1.3545 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.138029 sender=org.freedesktop.DBus -> destination=:1.3545 serial=3 reply_serial=2
+method call time=1622069982.138266 sender=:1.3545 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069982.138304 sender=org.freedesktop.DBus -> destination=:1.3545 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.3545"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069982.139227 sender=:1.3545 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.139244 sender=org.freedesktop.DBus -> destination=:1.3545 serial=5 reply_serial=4
+signal time=1622069982.140506 sender=org.freedesktop.DBus -> destination=:1.3545 serial=8 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3545"
+signal time=1622069982.140539 sender=org.freedesktop.DBus -> destination=(null destination) serial=4122 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3545"
+   string ":1.3545"
+   string ""
+method call time=1622069982.143235 sender=:1.3546 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069982.143287 sender=org.freedesktop.DBus -> destination=:1.3546 serial=1 reply_serial=1
+   string ":1.3546"
+signal time=1622069982.143302 sender=org.freedesktop.DBus -> destination=(null destination) serial=4123 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3546"
+   string ""
+   string ":1.3546"
+signal time=1622069982.143320 sender=org.freedesktop.DBus -> destination=:1.3546 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3546"
+method call time=1622069982.143916 sender=:1.3546 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.143936 sender=org.freedesktop.DBus -> destination=:1.3546 serial=3 reply_serial=2
+method call time=1622069982.144108 sender=:1.3546 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069982.144150 sender=org.freedesktop.DBus -> destination=:1.3546 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.3546"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069982.144910 sender=:1.3546 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.144922 sender=org.freedesktop.DBus -> destination=:1.3546 serial=5 reply_serial=4
+signal time=1622069982.145304 sender=org.freedesktop.DBus -> destination=:1.3546 serial=9 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3546"
+signal time=1622069982.145326 sender=org.freedesktop.DBus -> destination=(null destination) serial=4124 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3546"
+   string ":1.3546"
+   string ""
+method call time=1622069982.147880 sender=:1.3547 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069982.147905 sender=org.freedesktop.DBus -> destination=:1.3547 serial=1 reply_serial=1
+   string ":1.3547"
+signal time=1622069982.147918 sender=org.freedesktop.DBus -> destination=(null destination) serial=4125 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3547"
+   string ""
+   string ":1.3547"
+signal time=1622069982.147937 sender=org.freedesktop.DBus -> destination=:1.3547 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3547"
+method call time=1622069982.148758 sender=:1.3547 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.148793 sender=org.freedesktop.DBus -> destination=:1.3547 serial=3 reply_serial=2
+method call time=1622069982.149871 sender=:1.3547 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069982.149922 sender=org.freedesktop.DBus -> destination=:1.3547 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.3547"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069982.150739 sender=:1.3547 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069982.150753 sender=org.freedesktop.DBus -> destination=:1.3547 serial=5 reply_serial=4
+signal time=1622069982.150759 sender=org.freedesktop.DBus -> destination=:1.3547 serial=10 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3547"
+signal time=1622069982.150771 sender=org.freedesktop.DBus -> destination=(null destination) serial=4126 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3547"
+   string ":1.3547"
+   string ""
+signal time=1622069984.808639 sender=:1.37 -> destination=(null destination) serial=10357 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=RunningApplicationsChanged
+method call time=1622069984.811027 sender=:1.1424 -> destination=:1.37 serial=725 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=GetRunningApplications
+method return time=1622069984.826576 sender=:1.37 -> destination=:1.1424 serial=10358 reply_serial=725
+   array [
+      dict entry(
+         string "window:388"
+         array [
+            dict entry(
+               string "active-on-seats"
+               variant                   array [
+                     string "seat0"
+                  ]
+            )
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "flutter_flutter"
+            )
+         ]
+      )
+      dict entry(
+         string "code_code.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "code_code"
+            )
+         ]
+      )
+      dict entry(
+         string "firefox.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "org.gnome.Terminal.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "gnome-system-monitor.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "keepassxc_keepassxc.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "keepassxc_keepassxc"
+            )
+         ]
+      )
+      dict entry(
+         string "org.gnome.Nautilus.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "thunderbird.desktop"
+         array [
+         ]
+      )
+   ]
+signal time=1622069984.951194 sender=:1.3507 -> destination=(null destination) serial=17 path=/org/gtk/gio/DesktopAppInfo; interface=org.gtk.gio.DesktopAppInfo; member=Launched
+   array of bytes "/var/lib/snapd/desktop/applications/code_code.desktop" + \0
+   string ""
+   int64 111232
+   array [
+      string "file:///home/mea/flutter-linux-snap-url-launcher-bug/README.md"
+   ]
+   array [
+      dict entry(
+         string "origin-desktop-file"
+         variant             array of bytes "/var/lib/snapd/desktop/applications/code_code.desktop" + \0
+      )
+      dict entry(
+         string "origin-prgname"
+         variant             array of bytes "flutterlinuxsnapurllauncherbug" + \0
+      )
+      dict entry(
+         string "origin-pid"
+         variant             int64 110502
+      )
+   ]
+method call time=1622069984.993537 sender=:1.3548 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069984.993574 sender=org.freedesktop.DBus -> destination=:1.3548 serial=1 reply_serial=1
+   string ":1.3548"
+signal time=1622069984.993587 sender=org.freedesktop.DBus -> destination=(null destination) serial=4127 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3548"
+   string ""
+   string ":1.3548"
+signal time=1622069984.993603 sender=org.freedesktop.DBus -> destination=:1.3548 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3548"
+method call time=1622069984.994359 sender=:1.3548 -> destination=org.freedesktop.systemd1 serial=2 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=StartTransientUnit
+   string "snap.code.code.d564a7dc-5cda-4826-900c-e7f8cfd57f9a.scope"
+   string "fail"
+   array [
+      struct {
+         string "PIDs"
+         variant             array [
+               uint32 111232
+            ]
+      }
+   ]
+   array [
+   ]
+method call time=1622069984.995495 sender=:1.0 -> destination=org.freedesktop.DBus serial=15368 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=GetConnectionUnixUser
+   string ":1.3548"
+method return time=1622069984.995529 sender=org.freedesktop.DBus -> destination=:1.0 serial=5642 reply_serial=15368
+   uint32 1000
+method call time=1622069984.995715 sender=:1.0 -> destination=org.freedesktop.DBus serial=15369 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',sender='org.freedesktop.DBus',path='/org/freedesktop/DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0=':1.3548'"
+method return time=1622069984.995735 sender=org.freedesktop.DBus -> destination=:1.0 serial=5643 reply_serial=15369
+method call time=1622069984.995740 sender=:1.0 -> destination=org.freedesktop.DBus serial=15370 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=GetNameOwner
+   string ":1.3548"
+method return time=1622069984.995750 sender=org.freedesktop.DBus -> destination=:1.0 serial=5644 reply_serial=15370
+   string ":1.3548"
+signal time=1622069984.997555 sender=:1.0 -> destination=(null destination) serial=15371 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=JobNew
+   uint32 8788
+   object path "/org/freedesktop/systemd1/job/8788"
+   string "snap.code.code.d564a7dc-5cda-4826-900c-e7f8cfd57f9a.scope"
+method return time=1622069984.997600 sender=:1.0 -> destination=:1.3548 serial=15372 reply_serial=2
+   object path "/org/freedesktop/systemd1/job/8788"
+signal time=1622069984.999925 sender=:1.0 -> destination=(null destination) serial=15373 path=/org/freedesktop/systemd1; interface=org.freedesktop.systemd1.Manager; member=JobRemoved
+   uint32 8788
+   object path "/org/freedesktop/systemd1/job/8788"
+   string "snap.code.code.d564a7dc-5cda-4826-900c-e7f8cfd57f9a.scope"
+   string "done"
+method call time=1622069984.999971 sender=:1.0 -> destination=org.freedesktop.DBus serial=15374 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',sender='org.freedesktop.DBus',path='/org/freedesktop/DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0=':1.3548'"
+signal time=1622069985.003858 sender=org.freedesktop.DBus -> destination=:1.3548 serial=11 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3548"
+signal time=1622069985.003902 sender=org.freedesktop.DBus -> destination=(null destination) serial=4128 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3548"
+   string ":1.3548"
+   string ""
+method call time=1622069985.462101 sender=:1.3549 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069985.462155 sender=org.freedesktop.DBus -> destination=:1.3549 serial=1 reply_serial=1
+   string ":1.3549"
+signal time=1622069985.462166 sender=org.freedesktop.DBus -> destination=(null destination) serial=4129 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3549"
+   string ""
+   string ":1.3549"
+signal time=1622069985.462181 sender=org.freedesktop.DBus -> destination=:1.3549 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3549"
+method call time=1622069985.462231 sender=:1.3549 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069985.462314 sender=org.freedesktop.DBus -> destination=:1.3549 serial=3 reply_serial=2
+method call time=1622069985.464827 sender=:1.3549 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069985.464936 sender=org.freedesktop.DBus -> destination=:1.3549 serial=4 reply_serial=3
+method call time=1622069985.464943 sender=:1.3549 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069985.464953 sender=org.freedesktop.DBus -> destination=:1.3549 serial=5 reply_serial=4
+method call time=1622069985.464958 sender=:1.3549 -> destination=org.freedesktop.DBus serial=5 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/http/'"
+method return time=1622069985.464968 sender=org.freedesktop.DBus -> destination=:1.3549 serial=6 reply_serial=5
+method call time=1622069985.464975 sender=:1.3549 -> destination=org.freedesktop.DBus serial=6 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/https/'"
+method return time=1622069985.464984 sender=org.freedesktop.DBus -> destination=:1.3549 serial=7 reply_serial=6
+method call time=1622069985.464989 sender=:1.3549 -> destination=org.freedesktop.DBus serial=7 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/ftp/'"
+method return time=1622069985.464998 sender=org.freedesktop.DBus -> destination=:1.3549 serial=8 reply_serial=7
+method call time=1622069985.465003 sender=:1.3549 -> destination=org.freedesktop.DBus serial=8 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/socks/'"
+method return time=1622069985.465013 sender=org.freedesktop.DBus -> destination=:1.3549 serial=9 reply_serial=8
+method call time=1622069985.607822 sender=:1.3549 -> destination=org.freedesktop.DBus serial=9 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/socks/'"
+method return time=1622069985.607868 sender=org.freedesktop.DBus -> destination=:1.3549 serial=10 reply_serial=9
+method call time=1622069985.607875 sender=:1.3549 -> destination=org.freedesktop.DBus serial=10 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/ftp/'"
+method return time=1622069985.607893 sender=org.freedesktop.DBus -> destination=:1.3549 serial=11 reply_serial=10
+method call time=1622069985.608834 sender=:1.3549 -> destination=org.freedesktop.DBus serial=11 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/https/'"
+method return time=1622069985.608866 sender=org.freedesktop.DBus -> destination=:1.3549 serial=12 reply_serial=11
+method call time=1622069985.608871 sender=:1.3549 -> destination=org.freedesktop.DBus serial=12 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/http/'"
+method return time=1622069985.608881 sender=org.freedesktop.DBus -> destination=:1.3549 serial=13 reply_serial=12
+method call time=1622069985.608887 sender=:1.3549 -> destination=org.freedesktop.DBus serial=13 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/system/proxy/'"
+method return time=1622069985.608896 sender=org.freedesktop.DBus -> destination=:1.3549 serial=14 reply_serial=13
+signal time=1622069985.613732 sender=:1.37 -> destination=(null destination) serial=10359 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=RunningApplicationsChanged
+method call time=1622069985.614143 sender=:1.1424 -> destination=:1.37 serial=726 path=/org/gnome/Shell/Introspect; interface=org.gnome.Shell.Introspect; member=GetRunningApplications
+method return time=1622069985.623539 sender=:1.37 -> destination=:1.1424 serial=10360 reply_serial=726
+   array [
+      dict entry(
+         string "code_code.desktop"
+         array [
+            dict entry(
+               string "active-on-seats"
+               variant                   array [
+                     string "seat0"
+                  ]
+            )
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "code_code"
+            )
+         ]
+      )
+      dict entry(
+         string "window:388"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "flutter_flutter"
+            )
+         ]
+      )
+      dict entry(
+         string "firefox.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "org.gnome.Terminal.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "gnome-system-monitor.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "keepassxc_keepassxc.desktop"
+         array [
+            dict entry(
+               string "sandboxed-app-id"
+               variant                   string "keepassxc_keepassxc"
+            )
+         ]
+      )
+      dict entry(
+         string "org.gnome.Nautilus.desktop"
+         array [
+         ]
+      )
+      dict entry(
+         string "thunderbird.desktop"
+         array [
+         ]
+      )
+   ]
+signal time=1622069985.639303 sender=org.freedesktop.DBus -> destination=:1.3549 serial=12 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3549"
+signal time=1622069985.639358 sender=org.freedesktop.DBus -> destination=(null destination) serial=4130 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3549"
+   string ":1.3549"
+   string ""
+method call time=1622069985.844355 sender=:1.3550 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069985.844428 sender=org.freedesktop.DBus -> destination=:1.3550 serial=1 reply_serial=1
+   string ":1.3550"
+signal time=1622069985.844443 sender=org.freedesktop.DBus -> destination=(null destination) serial=4131 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3550"
+   string ""
+   string ":1.3550"
+signal time=1622069985.844476 sender=org.freedesktop.DBus -> destination=:1.3550 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3550"
+method call time=1622069985.844886 sender=:1.3550 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.844912 sender=org.freedesktop.DBus -> destination=:1.3550 serial=3 reply_serial=2
+method call time=1622069985.845157 sender=:1.3550 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069985.845194 sender=org.freedesktop.DBus -> destination=:1.3550 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string ":1.3550"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069985.846144 sender=:1.3550 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.846162 sender=org.freedesktop.DBus -> destination=:1.3550 serial=5 reply_serial=4
+signal time=1622069985.846737 sender=org.freedesktop.DBus -> destination=:1.3550 serial=13 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3550"
+signal time=1622069985.846760 sender=org.freedesktop.DBus -> destination=(null destination) serial=4132 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3550"
+   string ":1.3550"
+   string ""
+method call time=1622069985.849683 sender=:1.3551 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069985.849715 sender=org.freedesktop.DBus -> destination=:1.3551 serial=1 reply_serial=1
+   string ":1.3551"
+signal time=1622069985.849728 sender=org.freedesktop.DBus -> destination=(null destination) serial=4133 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3551"
+   string ""
+   string ":1.3551"
+signal time=1622069985.849745 sender=org.freedesktop.DBus -> destination=:1.3551 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3551"
+method call time=1622069985.850907 sender=:1.3551 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.850938 sender=org.freedesktop.DBus -> destination=:1.3551 serial=3 reply_serial=2
+method call time=1622069985.851095 sender=:1.3551 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069985.851130 sender=org.freedesktop.DBus -> destination=:1.3551 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.3551"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069985.852047 sender=:1.3551 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.852065 sender=org.freedesktop.DBus -> destination=:1.3551 serial=5 reply_serial=4
+signal time=1622069985.852970 sender=org.freedesktop.DBus -> destination=:1.3551 serial=14 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3551"
+signal time=1622069985.853001 sender=org.freedesktop.DBus -> destination=(null destination) serial=4134 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3551"
+   string ":1.3551"
+   string ""
+method call time=1622069985.855527 sender=:1.3552 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069985.855556 sender=org.freedesktop.DBus -> destination=:1.3552 serial=1 reply_serial=1
+   string ":1.3552"
+signal time=1622069985.855566 sender=org.freedesktop.DBus -> destination=(null destination) serial=4135 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3552"
+   string ""
+   string ":1.3552"
+signal time=1622069985.855581 sender=org.freedesktop.DBus -> destination=:1.3552 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3552"
+method call time=1622069985.856839 sender=:1.3552 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.856891 sender=org.freedesktop.DBus -> destination=:1.3552 serial=3 reply_serial=2
+method call time=1622069985.856898 sender=:1.3552 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069985.856946 sender=org.freedesktop.DBus -> destination=:1.3552 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string ":1.3552"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069985.857645 sender=:1.3552 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.857658 sender=org.freedesktop.DBus -> destination=:1.3552 serial=5 reply_serial=4
+signal time=1622069985.857690 sender=org.freedesktop.DBus -> destination=:1.3552 serial=15 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3552"
+signal time=1622069985.857703 sender=org.freedesktop.DBus -> destination=(null destination) serial=4136 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3552"
+   string ":1.3552"
+   string ""
+method call time=1622069985.861654 sender=:1.3553 -> destination=org.freedesktop.DBus serial=1 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=Hello
+method return time=1622069985.861700 sender=org.freedesktop.DBus -> destination=:1.3553 serial=1 reply_serial=1
+   string ":1.3553"
+signal time=1622069985.861712 sender=org.freedesktop.DBus -> destination=(null destination) serial=4137 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3553"
+   string ""
+   string ":1.3553"
+signal time=1622069985.861729 sender=org.freedesktop.DBus -> destination=:1.3553 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+   string ":1.3553"
+method call time=1622069985.862394 sender=:1.3553 -> destination=org.freedesktop.DBus serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.862444 sender=org.freedesktop.DBus -> destination=:1.3553 serial=3 reply_serial=2
+method call time=1622069985.862743 sender=:1.3553 -> destination=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=ListNames
+method return time=1622069985.862801 sender=org.freedesktop.DBus -> destination=:1.3553 serial=4 reply_serial=3
+   array [
+      string "org.freedesktop.DBus"
+      string ":1.3507"
+      string ":1.106"
+      string "org.freedesktop.Notifications"
+      string ":1.7"
+      string ":1.1803"
+      string "org.gtk.vfs.mountpoint_2451"
+      string ":1.8"
+      string ":1.1804"
+      string "org.freedesktop.portal.Desktop"
+      string "org.kde.StatusNotifierItem-2758-1"
+      string ":1.9"
+      string "org.gnome.Mutter.DisplayConfig"
+      string ":1.429"
+      string "org.freedesktop.systemd1"
+      string "org.gnome.Mutter.IdleMonitor"
+      string "org.gnome.evolution.dataserver.AddressBook10"
+      string "org.gnome.SettingsDaemon.Wacom"
+      string "org.gnome.SettingsDaemon.MediaKeys"
+      string "org.gtk.vfs.Daemon"
+      string "org.gnome.SettingsDaemon.PrintNotifications"
+      string "org.gnome.SettingsDaemon.Datetime"
+      string "org.pulseaudio.Server"
+      string "org.gtk.vfs.mountpoint_11185"
+      string "org.gnome.SettingsDaemon.XSettings"
+      string "org.gnome.SettingsDaemon.UsbProtection"
+      string ":1.80"
+      string "org.gnome.SessionManager"
+      string "org.freedesktop.impl.portal.desktop.gtk"
+      string ":1.81"
+      string ":1.82"
+      string ":1.60"
+      string ":1.83"
+      string ":1.61"
+      string "org.gnome.SystemMonitor"
+      string ":1.84"
+      string ":1.62"
+      string "org.gnome.evolution.dataserver.Sources5"
+      string ":1.40"
+      string "org.gnome.Terminal"
+      string ":1.85"
+      string "org.gnome.SettingsDaemon.ScreensaverProxy"
+      string ":1.63"
+      string ":1.41"
+      string "org.gtk.vfs.UDisks2VolumeMonitor"
+      string "org.a11y.Bus"
+      string ":1.86"
+      string ":1.64"
+      string ":1.42"
+      string ":1.20"
+      string "org.gnome.Calendar"
+      string "org.gnome.SettingsDaemon.Power"
+      string ":1.65"
+      string "org.gnome.Shell.AudioDeviceSelection"
+      string ":1.43"
+      string "org.gnome.Identity"
+      string ":1.3553"
+      string ":1.66"
+      string "org.gnome.Shell.CalendarServer"
+      string ":1.44"
+      string "org.gnome.keyring"
+      string "org.freedesktop.PackageKit"
+      string ":1.45"
+      string "org.gnome.Shell"
+      string ":1.68"
+      string ":1.46"
+      string ":1.24"
+      string ":1.397"
+      string ":1.111"
+      string ":1.69"
+      string ":1.47"
+      string "org.gnome.Shell.Wacom.PadOsd"
+      string ":1.1038"
+      string ":1.112"
+      string ":1.48"
+      string "org.kde.StatusNotifierItem-2587-1"
+      string "org.gnome.SettingsDaemon.Wwan"
+      string "org.gnome.Shell.Screenshot"
+      string ":1.49"
+      string ":1.114"
+      string "org.gtk.Settings"
+      string ":1.115"
+      string "org.freedesktop.portal.Documents"
+      string "ca.desrt.dconf"
+      string "org.gtk.vfs.GPhoto2VolumeMonitor"
+      string "org.gnome.SettingsDaemon"
+      string ":1.876"
+      string ":1.117"
+      string "org.gnome.SettingsDaemon.Sound"
+      string ":1.877"
+      string ":1.118"
+      string "io.snapcraft.Store"
+      string "org.gnome.SettingsDaemon.Rfkill"
+      string "org.freedesktop.ScreenSaver"
+      string "org.gnome.Shell.Screencast"
+      string "org.gtk.MountOperationHandler"
+      string "org.gnome.Shell.Introspect"
+      string "org.gnome.evolution.dataserver.Calendar8"
+      string "org.gnome.Magnifier"
+      string "org.gtk.vfs.AfcVolumeMonitor"
+      string ":1.719"
+      string "org.freedesktop.FileManager1"
+      string "org.gnome.seahorse.Application"
+      string "org.gnome.SettingsDaemon.Smartcard"
+      string "org.gnome.SettingsDaemon.A11ySettings"
+      string "org.PulseAudio1"
+      string "org.gtk.vfs.mountpoint_http"
+      string "org.gnome.Nautilus"
+      string "org.gnome.SettingsDaemon.Housekeeping"
+      string "org.gtk.vfs.GoaVolumeMonitor"
+      string "org.gnome.Panel"
+      string "org.gnome.SettingsDaemon.Sharing"
+      string "com.canonical.Unity"
+      string "org.gtk.Notifications"
+      string "org.gnome.Evolution-alarm-notify"
+      string ":1.3040"
+      string ":1.93"
+      string ":1.71"
+      string "org.freedesktop.portal.IBus"
+      string "org.gnome.OnlineAccounts"
+      string "org.gnome.ScreenSaver"
+      string ":1.72"
+      string "org.gnome.Shell.Notifications"
+      string "org.freedesktop.impl.portal.desktop.gnome"
+      string ":1.73"
+      string "org.gtk.vfs.Metadata"
+      string ":1.52"
+      string ":1.75"
+      string ":1.53"
+      string "org.gnome.SettingsDaemon.Keyboard"
+      string ":1.54"
+      string "org.freedesktop.impl.portal.PermissionStore"
+      string ":1.10"
+      string "org.gtk.vfs.mountpoint_dnssd"
+      string ":1.77"
+      string ":1.55"
+      string "org.gnome.keyring.SystemPrompter"
+      string ":1.11"
+      string "org.kde.StatusNotifierWatcher"
+      string ":1.2454"
+      string ":1.384"
+      string ":1.78"
+      string ":1.12"
+      string ":1.79"
+      string ":1.57"
+      string ":1.0"
+      string ":1.35"
+      string ":1.188"
+      string ":1.58"
+      string ":1.14"
+      string ":1.1423"
+      string ":1.101"
+      string ":1.59"
+      string ":1.2"
+      string "org.freedesktop.Tracker1.Miner.Files"
+      string "org.freedesktop.secrets"
+      string ":1.37"
+      string ":1.1424"
+      string ":1.388"
+      string ":1.124"
+      string ":1.102"
+      string ":1.3"
+      string "org.gtk.vfs.MTPVolumeMonitor"
+      string ":1.38"
+      string "org.freedesktop.IBus.Panel.Extension.Gtk3"
+      string ":1.4"
+      string ":1.39"
+      string ":1.423"
+      string ":1.126"
+      string ":1.5"
+      string ":1.424"
+      string ":1.402"
+      string ":1.105"
+      string "org.gnome.Disks.NotificationMonitor"
+      string ":1.6"
+      string "org.freedesktop.IBus"
+   ]
+method call time=1622069985.864207 sender=:1.3553 -> destination=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=RemoveMatch
+   string "type='signal', path='/org/freedesktop/DBus/Local',interface='org.freedesktop.DBus.Local', member='Disconnected'"
+method return time=1622069985.864224 sender=org.freedesktop.DBus -> destination=:1.3553 serial=5 reply_serial=4
+signal time=1622069985.864230 sender=org.freedesktop.DBus -> destination=:1.3553 serial=16 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameLost
+   string ":1.3553"
+signal time=1622069985.864242 sender=org.freedesktop.DBus -> destination=(null destination) serial=4138 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+   string ":1.3553"
+   string ":1.3553"
+   string ""

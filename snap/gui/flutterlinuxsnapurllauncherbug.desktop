@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flutterlinuxsnapurllauncherbug
+Comment=Project Management
+Icon=${SNAP}/meta/gui/icon.png
+Exec=flutterlinuxsnapurllauncherbug %U
+Terminal=false
+Type=Application
+Categories=Project Management;
+Keywords=Project Management;
+StartupNotify=false

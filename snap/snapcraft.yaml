@@ -1,0 +1,48 @@
+name: flutterlinuxsnapurllauncherbug
+version: 1.0.0-alpha
+summary: asd.
+description: Asdasdads
+
+confinement: devmode
+base: core18
+grade: stable
+architectures:
+  - build-on: [ amd64 ]
+
+slots:
+  dbus-flutterlinuxsnapurllauncherbug: # adjust accordingly to your app name
+    interface: dbus
+    bus: session
+    name: dev.flutter.flutterlinuxsnapurllauncherbug # adjust accordingly to your app name and
+
+parts:
+  flutterlinuxsnapurllauncherbug:
+    plugin: flutter
+    source: .
+    flutter-target: lib/main.dart # The main entry-point file of the application
+
+plugs:
+  dbus-plug-flutterlinuxsnapurllauncherbug:  # name that is used with 'snap connect' on plugs side
+    bus: session
+    interface: dbus
+    name: org.freedesktop.DBus
+  dbus-plug-2-flutterlinuxsnapurllauncherbug:  # name that is used with 'snap connect' on plugs side
+    bus: system
+    interface: dbus
+    name: org.freedesktop.DBus
+
+apps:
+  flutterlinuxsnapurllauncherbug:
+    command: flutterlinuxsnapurllauncherbug
+    extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
+    slots:
+      - dbus-flutterlinuxsnapurllauncherbug
+    plugs:
+    - network
+    - mount-observe
+    - hostname-control
+    - process-control
+    - home
+    - classic-support
+    - dbus-plug-flutterlinuxsnapurllauncherbug
+    - dbus-plug-2-flutterlinuxsnapurllauncherbug
